@@ -7,6 +7,14 @@
             <field name="NUM">2000</field>
           </block>
         </value>
+        <next>
+          <block type="oled_color" id="124">
+            <field name="OBJECT">GREEN</field>
+            <next>
+              <block type="movement_forward" id="144"></block>
+            </next>
+          </block>
+        </next>
       </block>
     </next>
   </block>
