@@ -1,22 +1,4 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_color" id="124" x="149" y="-318">
-    <field name="OBJECT">GREEN</field>
-  </block>
-  <block type="movement_forward" id="144" x="320" y="-246">
-    <next>
-      <block type="oled_color" id="169">
-        <field name="OBJECT">BLACK</field>
-        <next>
-          <block type="movement_reverse" id="179"></block>
-        </next>
-      </block>
-    </next>
-  </block>
-  <block type="movement_right" id="241" x="48" y="-215">
-    <next>
-      <block type="robot_delay" id="243" inline="true"></block>
-    </next>
-  </block>
   <block type="movement_left" id="189" x="228" y="-195">
     <next>
       <block type="movement_right" id="199">
@@ -25,23 +7,51 @@
             <next>
               <block type="movement_forward" id="220">
                 <next>
-                  <block type="movement_reverse" id="231"></block>
+                  <block type="movement_forward" id="54">
+                    <next>
+                      <block type="robot_delay" id="65" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="72">
+                            <field name="NUM">2000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_reverse" id="231">
+                            <next>
+                              <block type="robot_delay" id="243" inline="true">
+                                <next>
+                                  <block type="movement_right" id="241">
+                                    <next>
+                                      <block type="oled_color" id="169">
+                                        <field name="OBJECT">BLACK</field>
+                                        <next>
+                                          <block type="movement_forward" id="144">
+                                            <next>
+                                              <block type="oled_color" id="124">
+                                                <field name="OBJECT">GREEN</field>
+                                                <next>
+                                                  <block type="movement_reverse" id="179"></block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
           </block>
         </next>
-      </block>
-    </next>
-  </block>
-  <block type="movement_forward" id="54" x="189" y="-64">
-    <next>
-      <block type="robot_delay" id="65" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="72">
-            <field name="NUM">2000</field>
-          </block>
-        </value>
       </block>
     </next>
   </block>
