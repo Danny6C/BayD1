@@ -70,6 +70,9 @@
                                                                     <field name="NUM">500</field>
                                                                   </block>
                                                                 </value>
+                                                                <next>
+                                                                  <block type="movement_stop" id="34"></block>
+                                                                </next>
                                                               </block>
                                                             </next>
                                                           </block>
