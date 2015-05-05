@@ -15,6 +15,29 @@
                 <next>
                   <block type="oled_color" id="169">
                     <field name="OBJECT">BLACK</field>
+                    <next>
+                      <block type="movement_reverse" id="179">
+                        <next>
+                          <block type="movement_left" id="189">
+                            <next>
+                              <block type="movement_right" id="199">
+                                <next>
+                                  <block type="movement_stop" id="210">
+                                    <next>
+                                      <block type="movement_forward" id="220">
+                                        <next>
+                                          <block type="movement_reverse" id="231"></block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
