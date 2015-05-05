@@ -22,19 +22,9 @@
                                 <next>
                                   <block type="movement_right" id="241">
                                     <next>
-                                      <block type="oled_color" id="169">
-                                        <field name="OBJECT">BLACK</field>
+                                      <block type="movement_forward" id="144">
                                         <next>
-                                          <block type="movement_forward" id="144">
-                                            <next>
-                                              <block type="oled_color" id="124">
-                                                <field name="OBJECT">GREEN</field>
-                                                <next>
-                                                  <block type="movement_reverse" id="179"></block>
-                                                </next>
-                                              </block>
-                                            </next>
-                                          </block>
+                                          <block type="movement_reverse" id="179"></block>
                                         </next>
                                       </block>
                                     </next>
